@@ -1,0 +1,59 @@
+.board {
+  display: grid;
+  aspect-ratio: 1;
+  width: 32rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  font-size: 3rem;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  font-weight: bold;
+}
+
+.errorText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resetButton {
+  outline: none;
+  border: none;
+  color: white;
+  background-color: transparent;
+  font-size: 1.5rem;
+}
+
+.resetButton:active, .resetButton:focus {
+  outline: none;
+  border: none;
+}
+
+.boardHistory {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+}
+
+.miniBoard {
+  display: grid;
+  aspect-ratio: 1;
+  width: 8rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  font-size: 1rem;
+}
