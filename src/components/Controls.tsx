@@ -1,7 +1,4 @@
-import { GameState, Tile } from "@asebexen/tacky/dist/types"
 import styles from './styles.module.css';
-
-const OutcomeDisplay = (winner: Tile | null) => winner ? <p>{winner} wins!</p> : <p>Tie!</p>
 
 interface ControlsProps {
   onReset: () => void;
